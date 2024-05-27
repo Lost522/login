@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Recap Informazioni Utente</title>
+</head>
+<body>
+<h1>Recap Informazioni Utente</h1>
+<p>Nickname: <span th:text="${nickname}"></span></p>
+<p th:if="${email != null}">Email: <span th:text="${email}"></span></p>
+<a href="/utente?type=login">Torna al login</a> |
+<a href="/utente?type=new">Torna alla registrazione</a>
+</body>
+</html>
